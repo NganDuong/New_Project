@@ -1,0 +1,735 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/payment.page.css') }}" />
+    <script>
+        $(document).ready(function(){
+            $(".nav-tabs a").click(function(){
+                $(this).tab('show');
+            });
+        });
+    </script>
+
+{% endblock %}
+
+{#  TITLE   #}
+{% block title %} PAYMENT PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+{#  ORDER   #}
+    <div class="content-field">
+{#  FASHION SHOP HEADER     #}
+        <div class="content-header clearfix">
+            <div class="category" style="width: auto">
+                <img src="{{ asset('bundles/framework/images/PaymentPage/payment-field.png') }}">
+            </div>
+            <div class="order-bar">
+                <nav class="nav-order">
+                    <ul class="nav nav-tabs nav-tabs-order">
+                        <li id="confirmed" class="li-order">
+                            <a data-toggle="tab" href="#confirmed-tab" class="a-order" style="padding: 2em">
+                                CONFIRMED
+                            </a>
+                        </li>
+                        <li id="waiting" class="li-order">
+                            <a data-toggle="tab" href="#waiting-tab" class="a-order" style="padding: 2em">
+                                WAITING
+                            </a>
+                        </li>
+                        <li id="canceled" class="li-order">
+                            <a data-toggle="tab" href="#canceled-tab" class="a-order" style="padding: 2em">
+                                CANCELED
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+{#  ORDER CONTENT    #}
+        <div class="content-body tab-content" style="padding-bottom: 0em">
+
+            <div class="panel panel-default panel-order  tab-pane fade in active" id="confirmed-tab">
+                    <div class="panel-heading panel-heading-order">
+                        <nav class="navbar navbar-inverse navbar-order">
+                            <div class="container-fluid container-fluid-order">
+                                <div class="navbar-header navbar-header-order">
+                                    <a class="navbar-brand row navbar-brand-order">
+                                        STATUS
+                                        <input type="radio"> confirm
+                                        <input type="radio"> ignore
+                                    </a>
+                                </div>
+                                <div>
+                                    <ul class="nav navbar-nav navbar-nav-order">
+                                        <li style="width: inherit; text-align: center"><a>SHOP NAME</a></li>
+
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right navbar-right-order">
+                                        <li class="li-order-second"><a>TOTAL: 500$</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="content-body-info">
+                        <div class="info">
+                            INFORMATION
+                            <div class="info-content">
+                                <form role="form">
+                                    <div class="form-group row">
+                                        <span class="col-md-3" style="text-align: right">Customer name:</span>
+                                        <input id="customername" type="text" class="form-control col-md-9 form-control-payment" placeholder="Customer name">
+                                    </div>
+                                    <div class="form-group row">
+                                        <span class="col-md-3" style="text-align: right">User name:</span>
+                                        <input id="username" type="text" class="form-control col-md-9 form-control-payment" placeholder="User name">
+                                    </div>
+                                    <div class="form-group row">
+                                        <span class="col-md-3" style="text-align: right">Phone number:</span>
+                                        <input id="phone" type="text" class="form-control col-md-9 form-control-payment" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-group row">
+                                        <span class="col-md-3" style="text-align: right">Email:</span>
+                                        <input id="email" type="email" class="form-control col-md-9 form-control-payment" placeholder="Email">
+                                    </div>
+                                    <div class="form-group row" style="text-align: right">
+                                        <span class="col-md-3" style="text-align: right">Address:</span>
+                                        <input id="address" type="text" class="form-control col-md-9 form-control-payment" placeholder="Address">
+                                    </div>
+                                    <div class="form-group row" style="text-align: right">
+                                        <span class="col-md-3" style="text-align: right">Date:</span>
+                                        <input id="date" type="text" class="form-control col-md-9 form-control-payment" placeholder="Date">
+                                    </div>
+                                    <div class="row" style="margin-right: 0em; margin-left: 0em">
+                                        <div class="form-group row" style="text-align: right">
+                                            <span class="col-md-3" style="text-align: right">Ship:</span>
+                                            <input type="radio" class="col-md-1">
+                                            <span class="col-md-2" style="text-align: right">Fee:</span>
+                                            <input id="fee" type="text" class="form-control col-md-6" placeholder="Fee" style="border-radius: 0%; width: 17em; background-color: #808080">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-left: 12em">
+                                        <div class="form-group col-md-6 row" style="padding-left: 0em; padding-right: 0em">
+                                            <span class="col-md-3">Date:</span>
+                                            <input id="dateship" type="text" class="form-control col-md-9" placeholder="Date ship" style="border-radius: 0%; width: 10em; background-color: #808080">
+                                        </div>
+                                        <div class="form-group col-md-6 row" style="padding-left: 0em; padding-right: 1em">
+                                            <span class="col-md-3">Time:</span>
+                                            <input id="timeship" type="text" class="form-control col-md-9" placeholder="Time ship" style="border-radius: 0%; width: 10em; background-color: #808080">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                             <span class="col-md-3" style="text-align: right">Pay via:</span>
+                                        </div>
+                                        <div class="row" style="padding-left: 14em">
+                                            <div class="col-md-2">
+                                                <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/paypal.png') }}"></a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/master-card.png') }}"></a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/visa.png') }}"></a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/cash.png') }}"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="list-product" style="padding-top: 2em">
+                            LIST OF PRODUCT
+                            <div class="list-product-content" style="padding: 2em">
+                                <table class="table table-bordered table-order">
+                                    <thead class="thead-order">
+                                    <tr>
+                                        <th rowspan="2">ITEM</th>
+                                        <th rowspan="2">COLOR</th>
+                                        <th rowspan="2">SIZE</th>
+                                        <th rowspan="2">PRICE</th>
+                                        <th rowspan="2">QUANTITY</th>
+                                        <th colspan="2">STATUS</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            confirm
+                                        </td>
+                                        <td>
+                                            ignore
+                                        </td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th rowspan="3" class="clearfix">
+                                            <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                        <span class="span-order">
+                                            <p>ID: 123456</p>
+                                            <p>Made in: Korea</p>
+                                        </span>
+                                        </th>
+                                        <th>red</th>
+                                        <th>M</th>
+                                        <th>50$</th>
+                                        <th>1</th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>red</th>
+                                        <th>M</th>
+                                        <th>50$</th>
+                                        <th>1</th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>red</th>
+                                        <th>M</th>
+                                        <th>50$</th>
+                                        <th>1</th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" class="clearfix">
+                                            <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                        <span class="span-order">
+                                            <p>ID: 123456</p>
+                                            <p>Made in: Korea</p>
+                                        </span>
+                                        </th>
+                                        <th>red</th>
+                                        <th>M</th>
+                                        <th>50$</th>
+                                        <th>1</th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>red</th>
+                                        <th>M</th>
+                                        <th>50$</th>
+                                        <th>1</th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>red</th>
+                                        <th>M</th>
+                                        <th>50$</th>
+                                        <th>1</th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                        <th>
+                                            <input type="radio">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="7">TOTAL: 300$</th>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer" style="border: 1px solid #c0c0c0">
+                        <nav class="navbar navbar-inverse navbar-order" style="border: none; background-color: #ffffff">
+                            <div class="container-fluid" style="padding-left: 0em; padding-right: 0em">
+                                <div>
+                                    <ul class="nav navbar-nav navbar-right" style="width: 10em; margin-right: 0em; background-color: #808080">
+                                        <li style="width: inherit; text-align: center"><a href="#">
+                                                EXPORT
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            <div class="panel panel-default panel-order  tab-pane fade" id="waiting-tab">
+                <div class="panel-heading panel-heading-order">
+                    <nav class="navbar navbar-inverse navbar-order">
+                        <div class="container-fluid container-fluid-order">
+                            <div class="navbar-header navbar-header-order">
+                                <a class="navbar-brand row navbar-brand-order">
+                                    STATUS
+                                    <input type="radio"> confirm
+                                    <input type="radio"> ignore
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-order">
+                                    <li style="width: inherit; text-align: center"><a>SHOP NAME</a></li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right navbar-right-order">
+                                    <li class="li-order-second"><a>TOTAL: 500$</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="content-body-info">
+                    <div class="info">
+                        INFORMATION
+                        <div class="info-content">
+                            <form role="form">
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">Customer name:</span>
+                                    <input id="customername" type="text" class="form-control col-md-9 form-control-payment" placeholder="Customer name">
+                                </div>
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">User name:</span>
+                                    <input id="username" type="text" class="form-control col-md-9 form-control-payment" placeholder="User name">
+                                </div>
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">Phone number:</span>
+                                    <input id="phone" type="text" class="form-control col-md-9 form-control-payment" placeholder="Phone number">
+                                </div>
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">Email:</span>
+                                    <input id="email" type="email" class="form-control col-md-9 form-control-payment" placeholder="Email">
+                                </div>
+                                <div class="form-group row" style="text-align: right">
+                                    <span class="col-md-3" style="text-align: right">Address:</span>
+                                    <input id="address" type="text" class="form-control col-md-9 form-control-payment" placeholder="Address">
+                                </div>
+                                <div class="form-group row" style="text-align: right">
+                                    <span class="col-md-3" style="text-align: right">Date:</span>
+                                    <input id="date" type="text" class="form-control col-md-9 form-control-payment" placeholder="Date">
+                                </div>
+                                <div class="row" style="margin-right: 0em; margin-left: 0em">
+                                    <div class="form-group row" style="text-align: right">
+                                        <span class="col-md-3" style="text-align: right">Ship:</span>
+                                        <input type="radio" class="col-md-1">
+                                        <span class="col-md-2" style="text-align: right">Fee:</span>
+                                        <input id="fee" type="text" class="form-control col-md-6" placeholder="Fee" style="border-radius: 0%; width: 17em; background-color: #808080">
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-left: 12em">
+                                    <div class="form-group col-md-6 row" style="padding-left: 0em; padding-right: 0em">
+                                        <span class="col-md-3">Date:</span>
+                                        <input id="dateship" type="text" class="form-control col-md-9" placeholder="Date ship" style="border-radius: 0%; width: 10em; background-color: #808080">
+                                    </div>
+                                    <div class="form-group col-md-6 row" style="padding-left: 0em; padding-right: 1em">
+                                        <span class="col-md-3">Time:</span>
+                                        <input id="timeship" type="text" class="form-control col-md-9" placeholder="Time ship" style="border-radius: 0%; width: 10em; background-color: #808080">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <span class="col-md-3" style="text-align: right">Pay via:</span>
+                                    </div>
+                                    <div class="row" style="padding-left: 14em">
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/paypal.png') }}"></a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/master-card.png') }}"></a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/visa.png') }}"></a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/cash.png') }}"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="list-product" style="padding-top: 2em">
+                        LIST OF PRODUCT
+                        <div class="list-product-content" style="padding: 2em">
+                            <table class="table table-bordered table-order">
+                                <thead class="thead-order">
+                                <tr>
+                                    <th rowspan="2">ITEM</th>
+                                    <th rowspan="2">COLOR</th>
+                                    <th rowspan="2">SIZE</th>
+                                    <th rowspan="2">PRICE</th>
+                                    <th rowspan="2">QUANTITY</th>
+                                    <th colspan="2">STATUS</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        confirm
+                                    </td>
+                                    <td>
+                                        ignore
+                                    </td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th rowspan="3" class="clearfix">
+                                        <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                        <span class="span-order">
+                                            <p>ID: 123456</p>
+                                            <p>Made in: Korea</p>
+                                        </span>
+                                    </th>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="clearfix">
+                                        <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                        <span class="span-order">
+                                            <p>ID: 123456</p>
+                                            <p>Made in: Korea</p>
+                                        </span>
+                                    </th>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">TOTAL: 300$</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer" style="border: 1px solid #c0c0c0">
+                    <nav class="navbar navbar-inverse navbar-order" style="border: none; background-color: #ffffff">
+                        <div class="container-fluid" style="padding-left: 0em; padding-right: 0em">
+                            <div>
+                                <ul class="nav navbar-nav navbar-right" style="width: 10em; margin-right: 0em; background-color: #808080">
+                                    <li style="width: inherit; text-align: center"><a href="#">
+                                            EXPORT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="panel panel-default panel-order  tab-pane fade" id="canceled-tab">
+                <div class="panel-heading panel-heading-order">
+                    <nav class="navbar navbar-inverse navbar-order">
+                        <div class="container-fluid container-fluid-order">
+                            <div class="navbar-header navbar-header-order">
+                                <a class="navbar-brand row navbar-brand-order">
+                                    STATUS
+                                    <input type="radio"> confirm
+                                    <input type="radio"> ignore
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-order">
+                                    <li style="width: inherit; text-align: center"><a>SHOP NAME</a></li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right navbar-right-order">
+                                    <li class="li-order-second"><a>TOTAL: 500$</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="content-body-info">
+                    <div class="info">
+                        INFORMATION
+                        <div class="info-content">
+                            <form role="form">
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">Customer name:</span>
+                                    <input id="customername" type="text" class="form-control col-md-9 form-control-payment" placeholder="Customer name">
+                                </div>
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">User name:</span>
+                                    <input id="username" type="text" class="form-control col-md-9 form-control-payment" placeholder="User name">
+                                </div>
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">Phone number:</span>
+                                    <input id="phone" type="text" class="form-control col-md-9 form-control-payment" placeholder="Phone number">
+                                </div>
+                                <div class="form-group row">
+                                    <span class="col-md-3" style="text-align: right">Email:</span>
+                                    <input id="email" type="email" class="form-control col-md-9 form-control-payment" placeholder="Email">
+                                </div>
+                                <div class="form-group row" style="text-align: right">
+                                    <span class="col-md-3" style="text-align: right">Address:</span>
+                                    <input id="address" type="text" class="form-control col-md-9 form-control-payment" placeholder="Address">
+                                </div>
+                                <div class="form-group row" style="text-align: right">
+                                    <span class="col-md-3" style="text-align: right">Date:</span>
+                                    <input id="date" type="text" class="form-control col-md-9 form-control-payment" placeholder="Date">
+                                </div>
+                                <div class="row" style="margin-right: 0em; margin-left: 0em">
+                                    <div class="form-group row" style="text-align: right">
+                                        <span class="col-md-3" style="text-align: right">Ship:</span>
+                                        <input type="radio" class="col-md-1">
+                                        <span class="col-md-2" style="text-align: right">Fee:</span>
+                                        <input id="fee" type="text" class="form-control col-md-6" placeholder="Fee" style="border-radius: 0%; width: 17em; background-color: #808080">
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-left: 12em">
+                                    <div class="form-group col-md-6 row" style="padding-left: 0em; padding-right: 0em">
+                                        <span class="col-md-3">Date:</span>
+                                        <input id="dateship" type="text" class="form-control col-md-9" placeholder="Date ship" style="border-radius: 0%; width: 10em; background-color: #808080">
+                                    </div>
+                                    <div class="form-group col-md-6 row" style="padding-left: 0em; padding-right: 1em">
+                                        <span class="col-md-3">Time:</span>
+                                        <input id="timeship" type="text" class="form-control col-md-9" placeholder="Time ship" style="border-radius: 0%; width: 10em; background-color: #808080">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <span class="col-md-3" style="text-align: right">Pay via:</span>
+                                    </div>
+                                    <div class="row" style="padding-left: 14em">
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/paypal.png') }}"></a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/master-card.png') }}"></a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/visa.png') }}"></a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="{{ asset('bundles/framework/images/PaymentPage/cash.png') }}"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="list-product" style="padding-top: 2em">
+                        LIST OF PRODUCT
+                        <div class="list-product-content" style="padding: 2em">
+                            <table class="table table-bordered table-order">
+                                <thead class="thead-order">
+                                <tr>
+                                    <th rowspan="2">ITEM</th>
+                                    <th rowspan="2">COLOR</th>
+                                    <th rowspan="2">SIZE</th>
+                                    <th rowspan="2">PRICE</th>
+                                    <th rowspan="2">QUANTITY</th>
+                                    <th colspan="2">STATUS</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        confirm
+                                    </td>
+                                    <td>
+                                        ignore
+                                    </td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th rowspan="3" class="clearfix">
+                                        <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                        <span class="span-order">
+                                            <p>ID: 123456</p>
+                                            <p>Made in: Korea</p>
+                                        </span>
+                                    </th>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="clearfix">
+                                        <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                        <span class="span-order">
+                                            <p>ID: 123456</p>
+                                            <p>Made in: Korea</p>
+                                        </span>
+                                    </th>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>red</th>
+                                    <th>M</th>
+                                    <th>50$</th>
+                                    <th>1</th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                    <th>
+                                        <input type="radio">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">TOTAL: 300$</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer" style="border: 1px solid #c0c0c0">
+                    <nav class="navbar navbar-inverse navbar-order" style="border: none; background-color: #ffffff">
+                        <div class="container-fluid" style="padding-left: 0em; padding-right: 0em">
+                            <div>
+                                <ul class="nav navbar-nav navbar-right" style="width: 10em; margin-right: 0em; background-color: #808080">
+                                    <li style="width: inherit; text-align: center"><a href="#">
+                                            EXPORT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

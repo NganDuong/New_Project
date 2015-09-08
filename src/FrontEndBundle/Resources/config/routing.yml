@@ -1,0 +1,5 @@
+FrontEndBundle:
+
+  resource: "@FrontEndBundle/Controller"
+
+  type: annotation

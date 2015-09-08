@@ -1,0 +1,106 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/user.profile.page.css') }}">
+{% endblock %}
+
+{% block title %} USER PROFILE PAGE {% endblock %}
+
+{% block content %}
+<div class="content-field">
+
+{#  CONTENT HEADER    #}
+    <div class="content-header">
+        <img src="{{ asset('bundles/framework/images/UserProfilePage/ProfileField.png') }}">
+    </div>
+
+{#  CONTENT BODY    #}
+    <div class="content-body">
+
+{#  AVARTA        #}
+        <div class="user-avarta">
+            <img id="avarta-img" class="img-circle" src="{{ asset('bundles/framework/images/UserProfilePage/UserAvarta.png') }}">
+        </div>
+
+{#  USER INFO   #}
+        <div class="user-info">
+
+            <h4><b>GENERAL INFOMATION</b></h4>
+            <div class="info">
+                <p>ID</p>
+                <p>Name</p>
+                <p>User name</p>
+                <p>Password</p>
+                <p>Gender</p>
+                <p>Date of birth</p>
+                <p>Status</p>
+            </div>
+            <div class="data-info">
+                <p>{% if user.id %} {{ user.id }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.name %} {{ user.name }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.username %} {{ user.username }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>**********</p>
+                <p>{% if user.gender %} {{ user.gender }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.dob %} {{ user.dob }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.status %} {{ user.status }} {% else %} {{ "no info" }} {% endif %}</p>
+            </div>
+
+
+            <h4><b>CONTACT INFORMATION</b></h4>
+
+            <div class="info">
+                <p>Email</p>
+                <p>Phone number</p>
+                <p>Address</p>
+            </div>
+            <div class="data-info">
+                <p>{% if user.email %} {{ user.email }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.phonenumber %} {{ user.phonenumber }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.addr %} {{ user.addr }} {% else %} {{ "no info" }} {% endif %}</p>
+            </div>
+
+
+            <h4><b>ADDITIONAL INFORMATION</b></h4>
+            <div class="info">
+                <p>Website</p>
+                <p>Company</p>
+                <p>Job</p>
+                <p>Hobbie</p>
+            </div>
+            <div class="data-info">
+                <p>{% if user.website %} {{ user.website }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.company %} {{ user.company }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.job %} {{ user.job }} {% else %} {{ "no info" }} {% endif %}</p>
+                <p>{% if user.hobbie %} {{ user.hobbie }} {% else %} {{ "no info" }} {% endif %}</p>
+            </div>
+
+
+{#  UPDATE BUTTON   #}
+            <button id="update-btn" class="btn btn-primary" onclick="">UPDATE</button>
+
+        </div>
+
+{#  RIGHT DIRECTION #}
+        <div class="right-direction">
+            <div id="user-vote">
+                <a href=""><img class="img-rounded" src="{{ asset('bundles/framework/images/UserProfilePage/UserVote.png') }}"></a>
+            </div>
+            <div class="find-me-on">
+                Find me on:
+                <a href=""><img class="img-circle social-logo" src="{{ asset('bundles/framework/images/UserProfilePage/Facebook.png') }}" ></a>
+                <a href=""><img class="img-circle social-logo" src="{{ asset('bundles/framework/images/UserProfilePage/Google-plus.png') }}" ></a>
+                <a href=""><img class="img-circle social-logo" src="{{ asset('bundles/framework/images/UserProfilePage/Twitter.png') }}" ></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+{% endblock %}

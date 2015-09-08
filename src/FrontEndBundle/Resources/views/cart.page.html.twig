@@ -1,0 +1,252 @@
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/cart.page.css') }}" />
+    <script>
+        $(document).ready(function(){
+            $(".panel1").click(function(){
+                $("#panel1").remove();
+            });
+        });
+
+        $(document).ready(function(){
+            $(".panel2").click(function(){
+                $("#panel2").remove();
+            });
+        });
+
+        $(document).ready(function(){
+            $(".panel3").click(function(){
+                $("#panel3").remove();
+            });
+        });
+
+        $(document).ready(function(){
+            $(".panel4").click(function(){
+                $("#panel4").remove();
+            });
+        });
+
+        $('#quantity').bind('click keyup', function(){
+            $('<p/>').appendTo('#val').html($(this).val());
+        });
+    </script>
+
+{% endblock %}
+
+{#  TITLE   #}
+{% block title %} CART PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+    {#  FASHION SHOPS   #}
+    <div class="content-field">
+        {#  FASHION SHOP HEADER     #}
+        <div class="content-header">
+            <div class="category">
+                <img src="{{ asset('bundles/framework/images/cart-field.png') }}" width="auto">
+            </div>
+        </div>
+
+        {#  FASHION SHOP CONTENT    #}
+        <div class="content-body content-body-cart">
+            <div class="panel panel-default panel-order">
+                <div class="panel-heading panel-heading-order">
+                    <nav class="navbar navbar-inverse navbar-order">
+                        <div class="container-fluid container-fluid-order">
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-order">
+                                    <li class="li-nav-1"><a>ITEM</a></li>
+                                    <li class="li-nav-2"><a>PRICE</a></li>
+                                    <li class="li-nav-3"><a>DISCOUNT</a></li>
+                                    <li class="li-nav-4"><a>QUANTITY</a></li>
+                                    <li class="li-nav-5"><a>TOTAL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="panel-body panel-body-order">
+                    <div class="panel panel-default" id="panel1">
+                        <div class="panel-body panel-wishlist">
+                            <ul class="nav navbar-nav navbar-nav-order">
+                                <li class="li-1 clearfix">
+                                    <img src="{{ asset('bundles/framework/images/Icon Shop Page/product-1.png') }}" class="img-item">
+                                    <span>
+                                        <p style="padding-top: 1em">TOMMY</p>
+                                        <p>
+                                            <span>Size: S</span>
+                                            <span style="padding-left: 1em">
+                                                Color:
+                                                    <span>
+                                                         <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                    </span>
+                                            </span>
+                                        </p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                                </li>
+                                <li class="li-2">
+                                    100$
+                                </li>
+                                <li class="li-3">
+                                    50%
+                                </li>
+                                <li class="li-4">
+                                    <form>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="100" />
+                                    </form>
+                                    <script>
+                                        $('#quantity').bind('click keyup', function(){
+                                            $('<p/>').appendTo('#val').html($(this).val());
+                                        });
+                                    </script>
+                                </li>
+                                <li class="li-5">
+                                    50$
+                                </li>
+                                <li class="li-6">
+                                    <button type="button" class="close panel1">&times;</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="panel2">
+                        <div class="panel-body panel-wishlist">
+                            <ul class="nav navbar-nav navbar-nav-order">
+                                <li class="li-1 clearfix">
+                                    <img src="{{ asset('bundles/framework/images/Icon Shop Page/product-1.png') }}" class="img-item">
+                                    <span>
+                                        <p style="padding-top: 1em">TOMMY</p>
+                                        <p>
+                                            <span>Size: S</span>
+                                            <span style="padding-left: 1em">
+                                                Color:
+                                                    <span>
+                                                         <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                    </span>
+                                            </span>
+                                        </p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                                </li>
+                                <li class="li-2">
+                                    100$
+                                </li>
+                                <li class="li-3">
+                                    50%
+                                </li>
+                                <li class="li-4">
+                                    <form>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="100" />
+                                    </form>
+                                </li>
+                                <li class="li-5">
+                                    50$
+                                </li>
+                                <li class="li-6">
+                                    <button type="button" class="close panel2">&times;</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="panel3">
+                        <div class="panel-body panel-wishlist">
+                            <ul class="nav navbar-nav navbar-nav-order">
+                                <li class="li-1 clearfix">
+                                    <img src="{{ asset('bundles/framework/images/Icon Shop Page/product-1.png') }}" class="img-item">
+                                    <span>
+                                        <p style="padding-top: 1em">TOMMY</p>
+                                        <p>
+                                            <span>Size: S</span>
+                                            <span style="padding-left: 1em">
+                                                Color:
+                                                    <span>
+                                                         <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                    </span>
+                                            </span>
+                                        </p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                                </li>
+                                <li class="li-2">
+                                    100$
+                                </li>
+                                <li class="li-3">
+                                    50%
+                                </li>
+                                <li class="li-4">
+                                    <form>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="100" />
+                                    </form>
+                                </li>
+                                <li class="li-5">
+                                    50$
+                                </li>
+                                <li class="li-6">
+                                    <button type="button" class="close panel3">&times;</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="panel4">
+                        <div class="panel-body panel-wishlist">
+                            <ul class="nav navbar-nav navbar-nav-order">
+                                <li class="li-1 clearfix">
+                                    <img src="{{ asset('bundles/framework/images/Icon Shop Page/product-1.png') }}" class="img-item">
+                                    <span>
+                                        <p style="padding-top: 1em">TOMMY</p>
+                                        <p>
+                                            <span>Size: S</span>
+                                            <span style="padding-left: 1em">
+                                                Color:
+                                                    <span>
+                                                         <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                    </span>
+                                            </span>
+                                        </p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                                </li>
+                                <li class="li-2">
+                                    100$
+                                </li>
+                                <li class="li-3">
+                                    50%
+                                </li>
+                                <li class="li-4">
+                                    <form>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="100" />
+                                    </form>
+                                </li>
+                                <li class="li-5">
+                                    50$
+                                </li>
+                                <li class="li-6">
+                                    <button type="button" class="close panel4">&times;</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer panel-footer-cart">
+                    <nav class="navbar navbar-inverse navbar-footer-cart">
+                        <div class="container-fluid container-fluid-footer-cart">
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-footer-cart">
+                                    <li class="li-nav-footer-1"><a>CONTINUE SHOPPING</a></li>
+                                    <li class="li-nav-footer-1"><a>PAY</a></li>
+                                    <li class="li-nav-footer-2"><a>TOTAL</a></li>
+                                    <li class="li-nav-footer-3"><a>300$</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,102 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/contactpage.css') }}" />
+    <script src="{{ asset('bundles/framework/js/homepage.js') }}"></script>
+
+{% endblock %}
+
+{#  TITLE   #}
+{% block title %} CONTACT PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+{#  CONTACT   #}
+    <div class="content-field">
+{#  FASHION SHOP HEADER     #}
+        <div class="content-header">
+            <div class="category">
+                <img src="{{ asset('bundles/framework/images/Icon Contact Page/contact-field.png') }}" width="95%">
+            </div>
+        </div>
+
+{#  CONTACT CONTENT    #}
+        <div class="content-body">
+
+            <div class="content-body-header row">
+
+                <div class=" col-md-4" style="width: 50%">
+                    <img src="{{ asset('bundles/framework/images/Icon Contact Page/logo.png') }}">
+                </div>
+
+                <div class=" col-md-4 row" style="margin-top: 3%; width: 50%">
+
+                    <div class="col-md-6">
+                        <img src="{{ asset('bundles/framework/images/Icon Contact Page/phone.png') }}">
+                        <span>+84 166 602 5454</span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="{{ asset('bundles/framework/images/Icon Contact Page/email.png') }}">
+                        <span>wafeee@gmail.com</span>
+                    </div>
+
+                </div>
+
+                <div class=" col-md-4"  style="margin-top: 1%; width: 50%">
+                    <img src="{{ asset('bundles/framework/images/Icon Contact Page/location.png') }}">
+                    <span>268 Ly Thuong Kiet, F12, District 10, Ho Chi Minh City</span>
+                </div>
+
+            </div>
+
+            <div class="content-body-info">
+
+                <form class="form-inline row" role="form" style="margin-left: 16%; margin-right: 16%; margin-top: 2%">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Name" style="width: 100%">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone number" style="width: 100%">
+                    </div>
+                </form>
+
+                <form class="form-inline row" role="form" style="margin-left: 16%; margin-right: 16%; margin-top: 2%">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="email" placeholder="Email" style="width: 100%">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="company" placeholder="Company" style="width: 100%">
+                    </div>
+                </form>
+
+                <form class="form-inline row" role="form" style="margin-left: 16%; margin-right: 16%; margin-top: 2%">
+                    <div class="form-group col-md-11" style="width: 100%">
+                        <input type="text" class="form-control" id="message" placeholder="Message" style="width: inherit; height: 100px">
+                    </div>
+                </form>
+
+                <form class="form-inline row" role="form" style="margin-left: 16%; margin-right: 16%; margin-top: 2%">
+                    <div class="form-group" style="float: right; margin-right: 2%">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class="content-body-footer">
+                <span>Follow us on:</span>
+                    <a href="#"><img src="{{ asset('bundles/framework/images/Icon Contact Page/facebook.png') }}"></a>
+                    <a href="#"><img src="{{ asset('bundles/framework/images/Icon Contact Page/google-plus.png') }}"></a>
+                    <a href="#"><img src="{{ asset('bundles/framework/images/Icon Contact Page/twitter.png') }}"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

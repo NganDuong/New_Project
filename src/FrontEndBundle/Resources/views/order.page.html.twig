@@ -1,0 +1,83 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/order.page.css') }}" />
+
+{% endblock %}
+
+{#  TITLE   #}
+{% block title %} ORDER PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+{#  ORDER   #}
+<div class="content-field">
+
+
+    <div class="content-header">
+        <div class="category">
+            <img src="{{ asset('bundles/framework/images/OrderPage/order-field.png') }}" width="80%">
+        </div>
+        <div class="order-bar">
+            <nav style="height: inherit">
+                <ul class="nav nav-tabs" style="height: inherit">
+                    <li class="active" id="confirmed" style="height: inherit">
+                        <a class="order-status-field" data-toggle="tab" href="#confirmed">
+                            CONFIRMED
+                        </a>
+                    </li>
+                    <li id="waiting" style="height: inherit">
+                        <a class="order-status-field" data-toggle="tab" href="#waiting">
+                            WAITING
+                        </a>
+                    </li>
+                    <li id="canceled" style="height: inherit">
+                        <a class="order-status-field" data-toggle="tab" href="#canceled">
+                            CANCELED
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+{#  ORDER CONTENT    #}
+    <div class="content-body">
+
+{#  ORDER HEADER    #}
+        <div class="order-header" id="confirmed-tab">
+            <div class="order-element">
+                STATUS
+                <input type="radio" name="status" value="confirm"> confirm
+                <input type="radio" name="status" value="ignore"> ignore
+            </div>
+
+            <div class="order-element" >
+                {% if data.username %} {{ data.username }} {% endif %}
+
+            </div>
+
+            <div class="order-element">
+                {% if data.date %} {{ data.date }} {% endif %}
+            </div>
+        </div>
+
+{#  ORDER BODY        #}
+        <div class="order-body">
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+{% endblock %}

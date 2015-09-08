@@ -1,0 +1,255 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/update.user.profile.page.css') }}">
+{% endblock %}
+
+{% block title %} UPDATE USER PROFILE {% endblock %}
+
+{% block content %}
+<div class="content-field">
+
+{#  CONTENT HEADER    #}
+    <div class="content-header">
+        <img src="{{ asset('bundles/framework/images/UserProfilePage/ProfileField.png') }}">
+    </div>
+
+{#  CONTENT BODY    #}
+    <div class="content-body">
+
+{#  AVARTA        #}
+        <div class="user-avarta">
+            <img id="avarta-img" class="img-circle" src="{{ asset('bundles/framework/images/UserProfilePage/UserAvarta.png') }}">
+        </div>
+
+{#  USER UPDATE INFO  #}
+        <div class="user-info">
+            <form method="post" style="width: inherit">
+                <h4><b>GENERAL INFORMATION</b></h4>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        First Name
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Last Name
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        User Name
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Password
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Confirm Password
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Gender
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Date Of Birth
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Status
+                    </div>
+                    <input type="radio" name="status" value="buyer"> Buyer
+                    <input type="radio" name="status" value="sale-man" style="margin-left: 2em"> Sale Man
+                </div>
+
+
+                <h4><b>CONTACT INFORMATION</b></h4>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Email
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Phone Number
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Address
+                    </div>
+                    <input class="input-field">
+                </div>
+
+
+                <h4><b>ADDITIONAL INFORMATION</b></h4>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Website
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Company
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Job
+                    </div>
+                    <input class="input-field">
+                </div>
+                <div class="update-user-data-field">
+                    <div class="update-user-info">
+                        Hobbie
+                    </div>
+                    <input class="input-field">
+                </div>
+                <button id="save-btn" class="btn btn-primary" type="submit">SAVE</button>
+
+            </form>
+
+
+        </div>
+
+
+
+{#  RIGHT DIRECTION #}
+        <div class="right-direction">
+            <div id="user-vote">
+                <a href=""><img class="img-rounded" src="{{ asset('bundles/framework/images/UserProfilePage/UserVote.png') }}"></a>
+            </div>
+            <div class="find-me-on">
+                Find me on:
+                <a href=""><img class="img-circle social-logo" src="{{ asset('bundles/framework/images/UserProfilePage/Facebook.png') }}" ></a>
+                <a href=""><img class="img-circle social-logo" src="{{ asset('bundles/framework/images/UserProfilePage/Google-plus.png') }}" ></a>
+                <a href=""><img class="img-circle social-logo" src="{{ asset('bundles/framework/images/UserProfilePage/Twitter.png') }}" ></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+    {#<div class="container">#}
+        {#<div class="profile">#}
+            {#<img src="{{ asset('images/userprofile/profile-field.png') }}">#}
+            {#<div class="info">#}
+                {#<div class="col-md-2">#}
+                    {#<img src="{{ asset('images/userprofile/user-avarta.png') }}">#}
+                    {#<div>#}
+                        {#<a href="#">FOLLOW</a>#}
+                        {#<a href="#">MESSAGE</a>#}
+                    {#</div>#}
+                {#</div>#}
+                {#<form class="col-md-7" method="post" action="{{ path('updateprofile') }}">#}
+                    {#<div class="sub-info">#}
+                        {#<b>GENERAL INFORMATION</b>#}
+                        {#<div>#}
+                            {#<span>First Name</span>#}
+                            {#<span><input type="text" value="{{ app.user.firstname }}" name="firstname"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Last Name</span>#}
+                            {#<span><input type="text" value="{{ app.user.lastname }}" name="lastname"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>UserName</span>#}
+                            {#<span><input type="text" value="{{ app.user.username }}" disabled></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Sex</span>#}
+                            {#<span><input type="text" value="{% if app.user.sex is defined %} {{ app.user.sex }} {% endif %}"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Date of birth</span>#}
+                            {#<span><input type="text"></span>#}
+                        {#</div>#}
+
+                        {#<b>CONTACT INFORMATION</b>#}
+                        {#<div>#}
+                            {#<span>Email</span>#}
+                            {#<span><input type="text" value="{{ app.user.email }}" disabled></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Phone Number</span>#}
+                            {#<span><input type="text" name="phone" value="{% if app.user.phone %}{{app.user.phone}}{% endif %}"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Address</span>#}
+                            {#<span><input type="text" name="address" value="{% if app.user.address %}{{app.user.address}}{% endif %}"></span>#}
+                        {#</div>#}
+
+                        {#<b>ADDITIONAL INFORMATION</b>#}
+                        {#<div>#}
+                            {#<span>Website</span>#}
+                            {#<span><input type="text"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Company</span>#}
+                            {#<span><input type="text"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Job</span>#}
+                            {#<span><input type="text"></span>#}
+                        {#</div>#}
+                        {#<div>#}
+                            {#<span>Hobbie</span>#}
+                            {#<span><input type="text"></span>#}
+                        {#</div>#}
+                        {#<div class="update"><button type="submit">SAVE</button></div>#}
+                    {#</div>#}
+                {#</form>#}
+                {#<div class="col-md-3">#}
+                    {#<div class="user-vote">#}
+                        {#<div class="vote">#}
+                            {#<img src="{{ asset('images/userprofile/user-vote.png') }}">#}
+                            {#<div class="vote-index">#}
+                                {#<span>70%</span><br>#}
+                                {#<span>999.999</span>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="follow">#}
+                        {#<span>Find me on:</span>#}
+                        {#<img src="{{ asset('images/userprofile/facebook.png') }}">#}
+                        {#<img src="{{ asset('images/userprofile/google-plus.png') }}">#}
+                        {#<img src="{{ asset('images/userprofile/twitter.png') }}">#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+{% endblock %}

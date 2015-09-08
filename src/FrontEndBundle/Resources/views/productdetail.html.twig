@@ -1,0 +1,218 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="product-detail-logo">
+            <img src="{{ asset('images/productdetail/product-field.png') }}">
+        </div>
+        <div class="product-detail">
+            <div class="product-info">
+                <div class="product-avatar">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="{{ asset('images/products/banner13.png') }}" alt="">
+                            </div>
+
+                            <div class="item">
+                                <img src="{{ asset('images/products/banner14.png') }}" alt="">
+                            </div>
+
+                            <div class="item">
+                                <img src="{{ asset('images/products/banner15.png') }}" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon slide-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon slide-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="white-line"></div>
+                    <p class="product-name">tommy</p>
+                </div>
+                <div class="product-little-info">
+                    <div class="left">
+                        <p class="name">áo thun tommy</p>
+                        <div class="sub-info">
+                            <p>ID: <span>123456</span></p>
+                            <p>Made in: <span>Korea</span></p>
+                            <p>Color:
+                                <span>
+                                    <img src="{{ asset('images/productdetail/black-box.jpg') }}">
+                                    <img src="{{ asset('images/productdetail/white-box.png') }}">
+                                    <img src="{{ asset('images/productdetail/red-box.png') }}">
+                                </span>
+                            </p>
+                            <p>Status: <span>Available</span></p>
+                            <p>Rated: 
+                                <span>
+                                    <img src="{{ asset('images/productdetail/vote.png') }}">
+                                    <img src="{{ asset('images/productdetail/vote.png') }}">
+                                    <img src="{{ asset('images/productdetail/vote.png') }}">
+                                    <img src="{{ asset('images/productdetail/vote.png') }}">
+                                    <img src="{{ asset('images/productdetail/vote.png') }}">
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="up">
+                            <a href="#" class="addcart">ADD TO CART</a>
+                        </div>
+                        <div class="down">
+                            <div class="size">
+                                <span>Size: </span>
+                                <select name="size">
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </div>
+                            <div class="quantity">
+                                <span>Quantity: </span>
+                                <input type="number" min="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                <b>Thông tin chi tiết</b>
+                <p>
+                    Với cách đưa toàn bộ tham số lên như vậy, người đọc có thể dễ dàng biết được đâu là tham số lấy từ URL, đâu là biến khai báo bên trong function. Một cách để làm code trở nên trong sáng hơn.
+                    Thêm nữa, là nếu buồn buồn, có yêu cầu bổ sung thêm tham số nào ở giữa những tham số đã có thì bạn không phải đi tìm và sửa lại segment của tất cả các tham số sau nó. Và lỡ nếu bạn quên thì kết quả còn tệ hại hơn nhiều. Ví dụ với yêu cầu trên, bây giờ người ta muốn bỏ đi tham số $company không cần dùng nữa, với cách code của CI bạn chỉ cần xoá nó đi là xong, nhưng với cách lấy từ segment bạn sẽ phải sửa lại code của tất cả các tham số đầu vào.
+                    Và tiện lợi hơn, là bạn không còn phải ngồi đếm thứ tự các tham biến, không phải lo về chuyện đổi trật tự của chúng nữa.<br>
+                    Khi sử dụng Framework CodeIgniter , bên cạnh việc viết code xử lý dữ liệu thì việc sử dụng layout để hiển thị nội dung cũng không kém phần quang trọng. Trong bài viết bày tôi sẽ trình bày kĩ thuật load layout . Nếu ai đã từng tìm hiểu qua CakePHP Framework thì việc load layout trong bài viết này cũng tương tự.<br>
+                    Lẽ ra tôi không tính viết bài hưỡng dẫn này, vì trước đó đã có bài hưỡng dẫn của windy về việc sử dụng CI layout rồi. Tùy rằng cách đó chưa thật sự tối ưu. Nhưng ít nhiều đã đáp ứng được phần nào của yêu cầu công việc.<br><br>
+
+                    Cách mà tôi sắp trình bày dưới đây, cũng là cách mà các cms đang sử dụng. Các bạn có thể mở source của các hệ thống này để quan sát thì ắt sẽ rõ về phương pháp cũng như cách giải quyết vấn đề của họ.<br>
+                </p>
+            </div>
+            <div class="product-detail-logo">
+                <img src="{{ asset('images/productdetail/review-field.png') }}">
+            </div>
+            <div class="comments">
+                <div class="comments-panel" id="comments-panel">
+                    <div class="show-comment" id="show-comment">
+                        {{ render(controller('PhenomWafeeeBundle:StaticPage:showComment', {'id':id} )) }}
+                    </div>
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <div class="write-comment">
+                            <div class="user-comment">
+                                <div class="comment-form">
+                                    <div class="avatar"><img src="{{ asset('images/productdetail/user-avarta.png') }}"></div>
+                                    <div class="comment">
+                                        <div class="content-comment">
+                                            <div class="rating">
+                                                <img src="{{ asset('images/productdetail/vote.png') }}">
+                                                <img src="{{ asset('images/productdetail/vote.png') }}">
+                                                <img src="{{ asset('images/productdetail/vote.png') }}">
+                                                <img src="{{ asset('images/productdetail/vote.png') }}">
+                                                <img src="{{ asset('images/productdetail/vote.png') }}">
+                                            </div>
+                                            <div class="author">
+                                                <span class="name-author">{{ app.user.username }}</span>
+                                                {#<span class="time">16-07-2015</span>#}
+                                            </div>
+
+                                            <form class="content" id="form-comment" action="{{ path('productdetail', {'id':id}) }}" method="post">
+                                                <textarea name="comment" id="input-comment"></textarea>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <p><a href="{{ path('signin') }}">Sign in</a> to comment</p>
+                    {% endif %}
+                </div>
+                <div class="follow">
+                    <div>
+                        <span>Find me on:    </span>
+                        <img src="{{ asset('images/productdetail/facebook.png') }}">
+                        <img src="{{ asset('images/productdetail/twitter.png') }}">
+                        <img src="{{ asset('images/productdetail/google-plus.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/productdetail.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $(function(){
+            $('#input-comment').on('keyup', function(e){
+                var inputHeight = $("#input-comment")[0].scrollHeight;//console.log(inputHeight)
+                var height = $('#input-comment').height();//console.log(height)
+                if(inputHeight > height) {
+//                    $("#input-comment").height( inputHeight + 'px');
+                }
+                var key = e.keyCode;
+                var shiftKey = e.shiftKey;
+                var input = $('#input-comment').val();
+                if(key == 13 && !shiftKey) {// press enter to submit comment
+                    $('#input-comment').val('');
+                    if(input.length > 1) {
+                        if(!(/^\s+$/.test(input))) {// check whitespace
+//                            $('#form-comment').submit();
+                            $.ajax({
+                                type: "POST",
+                                dataType: 'json',
+                                data: {comment: input},
+                                url: "{{ path('productdetail', {'id': id} ) }}",
+                                success: function(data) {
+                                    if(data.success) {
+                                        /*var userComment = $('<div>').addClass('user-comment');
+                                        var avatarDiv = $('<div>').addClass('avatar');
+                                        {#var imgAvatar = $('<img>').attr('src', "{{ asset('upload/user-avatar/alta_gothicandroll_1000x1000.jpg') }}");;#}
+                                        avatarDiv.append(imgAvatar);
+                                        userComment.append(avatarDiv);
+                                        var commentDiv = $('<div>').addClass('comment');
+                                        var contentComment = $('<div>').addClass('content-comment');
+                                        var rating = $('<div>').addClass('rating');
+                                        {#var imgVote = $('<img>').attr('src', "{{ asset('images/productdetail/vote.png') }}");#}
+                                        for(i = 0; i < 5; i++) {
+                                            rating.append(imgVote);
+                                        }
+                                        var author = $('<div>').addClass('author')
+                                        var nameAuthor = $('<span>').addClass('name-author');
+                                        nameAuthor.text('Vuong')
+                                        var time = $('<span>').addClass('time');
+                                        time.text('31-07-2015');
+                                        author.append(nameAuthor);
+                                        author.append(time);
+                                        var content = $('<div>').addClass('content');
+                                        content.append('<p>'+input+'</p>');
+                                        contentComment.append(rating);
+                                        contentComment.append(author);
+                                        contentComment.append(content);
+                                        commentDiv.append(contentComment);
+                                        userComment.append(avatarDiv);
+                                        userComment.append(contentComment);
+                                        var showComment = $('.show-comment');
+                                        showComment.prepend(userComment);*/
+                                        $('#show-comment').load('/ #main', function(){});
+                                    }
+                                },
+                                error: function(data) {
+                                    console.log('Something wrong has happened');
+                                }
+                            });
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+{% endblock %}

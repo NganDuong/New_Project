@@ -1,0 +1,574 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/orderpage.css') }}" />
+    <script>
+        $(document).ready(function(){
+            $(".nav-tabs a").click(function(){
+                $(this).tab('show');
+            });
+        });
+    </script>
+{% endblock %}
+
+{#  TITLE   #}
+{% block title %} ORDER PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+{#  ORDER   #}
+    <div class="content-field">
+{#  FASHION SHOP HEADER     #}
+        <div class="content-header clearfix">
+            <div class="category" style="width: auto">
+                <img src="{{ asset('bundles/framework/images/OrderPage/order-field.png') }}">
+            </div>
+            <div class="order-bar">
+                <nav class="nav-order">
+                    <ul class="nav nav-tabs nav-tabs-order">
+                        <li id="confirmed" class="li-order">
+                            <a data-toggle="tab" href="#confirmed-tab" class="a-order" style="padding: 2em">
+                                CONFIRMED
+                            </a>
+                        </li>
+                        <li id="waiting" class="li-order">
+                            <a data-toggle="tab" href="#waiting-tab" class="a-order" style="padding: 2em">
+                                WAITING
+                            </a>
+                        </li>
+                        <li id="canceled" class="li-order">
+                            <a data-toggle="tab" href="#canceled-tab" class="a-order" style="padding: 2em">
+                                CANCELED
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+{#  ORDER CONTENT    #}
+        <div class="content-body tab-content">
+            <div class="panel panel-default panel-order tab-pane fade in active" id="confirmed-tab">
+                <div class="panel-heading panel-heading-order">
+                    <nav class="navbar navbar-inverse navbar-order">
+                        <div class="container-fluid container-fluid-order">
+                            <div class="navbar-header navbar-header-order">
+                                <a class="navbar-brand row navbar-brand-order">
+                                    STATUS
+                                    <input type="radio"> confirm
+                                    <input type="radio"> ignore
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-order">
+                                    <li style="width: inherit; text-align: center"><a>USER NAME</a></li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right navbar-right-order">
+                                    <li class="li-order-second"><a>DATE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="panel-body panel-body-order">
+                    <table class="table table-bordered table-order">
+                        <thead class="thead-order">
+                            <tr>
+                                <th rowspan="2">ITEM</th>
+                                <th rowspan="2">COLOR</th>
+                                <th rowspan="2">SIZE</th>
+                                <th rowspan="2">PRICE</th>
+                                <th rowspan="2">QUANTITY</th>
+                                <th rowspan="2">PAY VIA</th>
+                                <th colspan="2">STATUS</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    confirm
+                                </td>
+                                <td>
+                                    ignore
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="3">
+                                    <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                    <span class="span-order">
+                                        <p>ID: 123456</p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                                </th>
+                                <th>red</th>
+                                <th>M</th>
+                                <th>50$</th>
+                                <th>1</th>
+                                <th>Visa Card</th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>red</th>
+                                <th>M</th>
+                                <th>50$</th>
+                                <th>1</th>
+                                <th>Visa Card</th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>red</th>
+                                <th>M</th>
+                                <th>50$</th>
+                                <th>1</th>
+                                <th>Visa Card</th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">
+                                    <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                    <span class="span-order">
+                                        <p>ID: 123456</p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                                </th>
+                                <th>red</th>
+                                <th>M</th>
+                                <th>50$</th>
+                                <th>1</th>
+                                <th>Visa Card</th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>red</th>
+                                <th>M</th>
+                                <th>50$</th>
+                                <th>1</th>
+                                <th>Visa Card</th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>red</th>
+                                <th>M</th>
+                                <th>50$</th>
+                                <th>1</th>
+                                <th>Visa Card</th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                                <th>
+                                    <input type="radio">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="8">TOTAL: 300$</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <nav class="navbar navbar-inverse navbar-order" style="border: none">
+                        <div class="container-fluid container-fluid-footer">
+                            <div class="navbar-header" style="width: 40em; background-color: #808080">
+                                <a class="navbar-brand a-order navbar-brand-order">
+                                    ADDRESS: 268 LY THUONG KIET, F12, DISTRICT 10, HO CHI MINH CITY
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav" style="width: 28em; background-color: #808080">
+                                    <li style="width: inherit; text-align: center">
+                                        <a>
+                                            PHONE NUMBER: +84 12345678
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right" style="width: 12em; margin-right: 0em">
+                                    <li style="width: inherit; text-align: center"><a href="#">
+                                            EXPORT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="panel panel-default panel-order tab-pane fade" id="waiting-tab">
+                <div class="panel-heading panel-heading-order">
+                    <nav class="navbar navbar-inverse navbar-order">
+                        <div class="container-fluid container-fluid-order">
+                            <div class="navbar-header navbar-header-order">
+                                <a class="navbar-brand row navbar-brand-order">
+                                    STATUS
+                                    <input type="radio"> confirm
+                                    <input type="radio"> ignore
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-order">
+                                    <li style="width: inherit; text-align: center"><a>USER NAME</a></li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right navbar-right-order">
+                                    <li class="li-order-second"><a>DATE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="panel-body panel-body-order">
+                    <table class="table table-bordered table-order">
+                        <thead class="thead-order">
+                        <tr>
+                            <th rowspan="2">ITEM</th>
+                            <th rowspan="2">COLOR</th>
+                            <th rowspan="2">SIZE</th>
+                            <th rowspan="2">PRICE</th>
+                            <th rowspan="2">QUANTITY</th>
+                            <th rowspan="2">PAY VIA</th>
+                            <th colspan="2">STATUS</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                confirm
+                            </td>
+                            <td>
+                                ignore
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="3">
+                                <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                    <span class="span-order">
+                                        <p>ID: 123456</p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                            </th>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">
+                                <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                    <span class="span-order">
+                                        <p>ID: 123456</p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                            </th>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="8">TOTAL: 300$</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <nav class="navbar navbar-inverse navbar-order" style="border: none">
+                        <div class="container-fluid container-fluid-footer">
+                            <div class="navbar-header" style="width: 40em; background-color: #808080">
+                                <a class="navbar-brand a-order navbar-brand-order">
+                                    ADDRESS: 268 LY THUONG KIET, F12, DISTRICT 10, HO CHI MINH CITY
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav" style="width: 28em; background-color: #808080">
+                                    <li style="width: inherit; text-align: center">
+                                        <a>
+                                            PHONE NUMBER: +84 12345678
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right" style="width: 12em; margin-right: 0em">
+                                    <li style="width: inherit; text-align: center"><a href="#">
+                                            EXPORT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="panel panel-default panel-order tab-pane fade" id="canceled-tab">
+                <div class="panel-heading panel-heading-order">
+                    <nav class="navbar navbar-inverse navbar-order">
+                        <div class="container-fluid container-fluid-order">
+                            <div class="navbar-header navbar-header-order">
+                                <a class="navbar-brand row navbar-brand-order">
+                                    STATUS
+                                    <input type="radio"> confirm
+                                    <input type="radio"> ignore
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav navbar-nav-order">
+                                    <li style="width: inherit; text-align: center"><a>USER NAME</a></li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right navbar-right-order">
+                                    <li class="li-order-second"><a>DATE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="panel-body panel-body-order">
+                    <table class="table table-bordered table-order">
+                        <thead class="thead-order">
+                        <tr>
+                            <th rowspan="2">ITEM</th>
+                            <th rowspan="2">COLOR</th>
+                            <th rowspan="2">SIZE</th>
+                            <th rowspan="2">PRICE</th>
+                            <th rowspan="2">QUANTITY</th>
+                            <th rowspan="2">PAY VIA</th>
+                            <th colspan="2">STATUS</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                confirm
+                            </td>
+                            <td>
+                                ignore
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th rowspan="3">
+                                <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                    <span class="span-order">
+                                        <p>ID: 123456</p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                            </th>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">
+                                <img src="{{ asset('bundles/framework/images/OrderPage/item.png') }}" class="img-order">
+                                    <span class="span-order">
+                                        <p>ID: 123456</p>
+                                        <p>Made in: Korea</p>
+                                    </span>
+                            </th>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>red</th>
+                            <th>M</th>
+                            <th>50$</th>
+                            <th>1</th>
+                            <th>Visa Card</th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                            <th>
+                                <input type="radio">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="8">TOTAL: 300$</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <nav class="navbar navbar-inverse navbar-order" style="border: none">
+                        <div class="container-fluid container-fluid-footer">
+                            <div class="navbar-header" style="width: 40em; background-color: #808080">
+                                <a class="navbar-brand a-order navbar-brand-order">
+                                    ADDRESS: 268 LY THUONG KIET, F12, DISTRICT 10, HO CHI MINH CITY
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav navbar-nav" style="width: 28em; background-color: #808080">
+                                    <li style="width: inherit; text-align: center">
+                                        <a>
+                                            PHONE NUMBER: +84 12345678
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right" style="width: 12em; margin-right: 0em">
+                                    <li style="width: inherit; text-align: center"><a href="#">
+                                            EXPORT
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

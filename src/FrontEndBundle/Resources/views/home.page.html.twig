@@ -1,0 +1,292 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/home.page.css') }}" />
+    <script src="{{ asset('bundles/framework/js/homepage.js') }}"></script>
+
+{% endblock %}
+
+{#  TITLE   #}
+{% block title %} HOME PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+{#  FASHION SHOPS   #}
+    <div class="content-field">
+{#  FASHION SHOP HEADER     #}
+        <div class="content-header">
+            <div class="category">
+                <img src="{{ asset('bundles/framework/images/fashion.png') }}" width="101%">
+            </div>
+            <div id="fashion-bar" class="product-bar">
+                <nav>
+                    <ul class="nav nav-tabs" style="padding-left: 2em; padding-right: 2em">
+                        <li class="active" id="cap-product" style="width: 17em">
+                            <a data-toggle="tab" href="#cap">
+                                <img src="{{ asset('bundles/framework/images/cap.png') }}">
+                            </a>
+                        </li>
+                        <li id="shoe-product"  style="width: 17em">
+                            <a data-toggle="tab" href="#shoe">
+                                <img src="{{ asset('bundles/framework/images/shoe.png') }}">
+                            </a>
+                        </li>
+                        <li id="jacket-product"  style="width: 17em">
+                            <a data-toggle="tab" href="#jacket">
+                                <img src="{{ asset('bundles/framework/images/jacket.png') }}">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+{#  FASHION SHOP CONTENT    #}
+        <div class="content-body">
+            <div id="fashion-shop-img" class="owl-carousel">
+
+                {#{% for i in 0..3 %}#}
+
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-00.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">YEAH 1</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-01.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">X70</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-02.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">RED</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-03.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">LYRA</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-04.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">GIAY VNXK</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-05.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">GIO BIEN</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-06.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">MINI</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-07.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">MR. BIN</div>
+                    </div>
+                </div>
+
+                {#{% endfor %}#}
+
+            </div>
+        </div>
+    </div>
+
+
+
+{#  BEAUTY SHOP CONTENT   #}
+    <div class="content-field">
+        {#  BEAUTY-PRODUCT SHOP HEADER     #}
+        <div class="content-header">
+            <div class="category">
+                <img src="{{ asset('bundles/framework/images/beauty.png') }}" width="101%">
+            </div>
+            <div id="beauty-product-bar" class="product-bar">
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li class="active" id="cap-product">
+                            <a data-toggle="tab" href="#cap">
+                                <img src="{{ asset('bundles/framework/images/cream.png') }}">
+                            </a>
+                        </li>
+                        <li id="shoe-product">
+                            <a data-toggle="tab" href="#shoe">
+                                <img src="{{ asset('bundles/framework/images/lipstick.png') }}">
+                            </a>
+                        </li>
+                        <li id="jacket-product">
+                            <a data-toggle="tab" href="#jacket">
+                                <img src="{{ asset('bundles/framework/images/perfum.png') }}">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        {#  BEAUTY SHOP CONTENT    #}
+        <div class="content-body">
+            <div id="beauty-shop-img" class="owl-carousel">
+
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-00.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">YEAH 1</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-01.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">X70</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-02.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">RED</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-03.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">LYRA</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-04.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">GIAY VNXK</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-05.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">GIO BIEN</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-06.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">MINI</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-07.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">MR. BIN</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+{#  DEVICES SHOP CONTENT   #}
+    <div class="content-field">
+        {#  BEAUTY-PRODUCT SHOP HEADER     #}
+        <div class="content-header">
+            <div class="category">
+                <img src="{{ asset('bundles/framework/images/food-beverage.png') }}" width="101%">
+            </div>
+            <div id="food-and-beverage-bar" class="product-bar">
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li class="active" id="cap-product">
+                            <a data-toggle="tab" href="#cap">
+                                <img src="{{ asset('bundles/framework/images/bottle.png') }}">
+                            </a>
+                        </li>
+                        <li id="shoe-product">
+                            <a data-toggle="tab" href="#shoe">
+                                <img src="{{ asset('bundles/framework/images/cookie.png') }}">
+                            </a>
+                        </li>
+                        <li id="jacket-product">
+                            <a data-toggle="tab" href="#jacket">
+                                <img src="{{ asset('bundles/framework/images/fruit.png') }}">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        {#  DEVICES SHOP CONTENT    #}
+        <div class="content-body">
+            <div id="device-shop-img" class="owl-carousel">
+
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-00.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">YEAH 1</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-01.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">X70</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-02.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">RED</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-03.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">LYRA</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-04.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">GIAY VNXK</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-05.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">GIO BIEN</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-06.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">MINI</div>
+                    </div>
+                    <div class="img-field" style="border: 1px solid #c0c0c0">
+                        <a href="#"><img class="img-rounded-shop" src="{{ asset('bundles/framework/images/avarta-07.png') }}"></a>
+                        <hr style="margin-bottom: 0em">
+                        <div style="text-align: center; margin: 1em">MR. BIN</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

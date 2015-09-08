@@ -1,0 +1,880 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{% block header %}
+    {#<link rel="stylesheet" href="{{ asset('bundles/framework/css/category.page.css') }}">#}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/shop.page.css') }}">
+    <script src="{{ asset('bundles/framework/js/shop.js') }}"></script>
+
+{% endblock %}
+
+{% block title %} SHOP PAGE {% endblock %}
+
+{% block content %}
+<div class="content-field">
+
+{#  HEADER    #}
+    <div class="content-header">
+        <div class="category">
+            <img src="{{ asset('bundles/framework/images/ShopPage/fashion-field.png') }}" width="85%">
+        </div>
+    </div>
+
+{#  CAP    #}
+    <div class="product-line">
+        <img class="img-rounded" src="{{ asset('bundles/framework/images/ShopPage/cap.png') }}" height="100%">
+    </div>
+
+{#  CAP PRODUCT    #}
+    <div class="content-body">
+        <div class="owl-carousel fashion-shop-img">
+            <div>
+                <div id="product0" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product1" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product2" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product3" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product4" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product5" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product6" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product7" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{#  SHOE    #}
+    <div class="product-line">
+        <img class="img-rounded" src="{{ asset('bundles/framework/images/ShopPage/shoe.png') }}" height="100%">
+    </div>
+
+{#  SHOE PRODUCT    #}
+    <div class="content-body">
+        <div class="owl-carousel fashion-shop-img">
+            <div>
+                <div id="product0" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product1" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product2" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product3" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product4" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product5" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product6" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product7" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{#  JACKET    #}
+    <div class="product-line">
+        <img class="img-rounded" src="{{ asset('bundles/framework/images/ShopPage/jacket.png') }}" height="100%">
+    </div>
+
+    {#  SHOE PRODUCT    #}
+    <div class="content-body">
+        <div class="owl-carousel fashion-shop-img">
+            <div>
+                <div id="product0" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product1" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product2" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product3" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product4" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product5" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="product6" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+
+                <div id="product7" class="img-field">
+                    <div class="price">
+                        <span class="price-info">100,000</span>
+                    </div>
+                    <div class="sale-off">
+                        <div class="sale-off-header">
+                            SALE OFF
+                        </div>
+                        <div class="sale-off-info">
+                            50%
+                        </div>
+                    </div>
+
+                    <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                    <div class="click-to-cart">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                        <div style="margin-top: 1em">
+                            <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                            <span class="badge">10</span>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                        <a href="#" style="text-decoration: none; color: #808080"><span>TOMMY T-SHIRT</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{#  REVIEW    #}
+    <div class="content-header review-header">
+        <div class="category">
+            <img class="img-rounded" src="{{ asset('bundles/framework/images/ShopPage/review-field.png') }}" width="85%" >
+        </div>
+    </div>
+
+{#  REVIEW BODY    #}
+        <div class="content-body review-body">
+            <div class="user-vote">
+                <img src="{{ asset('bundles/framework/images/ShopPage/vote-detail.png') }}" style="width: 5em">
+                <span style="margin-left: 1em">
+                    <b style="font-size: 23px">70%</b>
+                    <p>999.999</p>
+                </span>
+            </div>
+            <div class="review-data">
+                <div class="comment">
+                    <body data-spy="scroll" data-offset="20">
+
+                    <div id="section1" class="container-fluid row">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/user-avarta.png') }}" class="col-md-2" style="width: 6em; padding-left: 0em; overflow: visible">
+                        <div class="comment-info row">
+                            <div class="col-md-9" style="margin-top: 1em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+
+                                <br>
+                                <span style="color: #ffffff; font-weight: bold">NAME</span>
+                                <span style="color: #ffffff">01-01-01</span>
+
+                                <div class="comment-content">
+                                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="section1" class="container-fluid row">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/user-avarta.png') }}" class="col-md-2" style="width: 6em; padding-left: 0em; overflow: visible">
+                        <div class="comment-info row">
+                            <div class="col-md-9" style="margin-top: 1em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+
+                                <br>
+                                <span style="color: #ffffff; font-weight: bold">NAME</span>
+                                <span style="color: #ffffff">01-01-01</span>
+
+                                <div class="comment-content">
+                                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="section1" class="container-fluid row">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/user-avarta.png') }}" class="col-md-2" style="width: 6em; padding-left: 0em; overflow: visible">
+                        <div class="comment-info row">
+                            <div class="col-md-9" style="margin-top: 1em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+
+                                <br>
+                                <span style="color: #ffffff; font-weight: bold">NAME</span>
+                                <span style="color: #ffffff">01-01-01</span>
+
+                                <div class="comment-content">
+                                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="section1" class="container-fluid row">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/user-avarta.png') }}" class="col-md-2" style="width: 6em; padding-left: 0em; overflow: visible">
+                        <div class="comment-info row">
+                            <div class="col-md-9" style="margin-top: 1em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                                <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+
+                                <br>
+                                <span style="color: #ffffff; font-weight: bold">NAME</span>
+                                <span style="color: #ffffff">01-01-01</span>
+
+                                <div class="comment-content">
+                                    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </body>
+                </div>
+            </div>
+            <div id="section1" class="container-fluid row" style="margin-left: 15em; margin-right: 17em; margin-top: 2em">
+                <img src="{{ asset('bundles/framework/images/ShopPage/user-avarta.png') }}" class="col-md-2" style="width: 6em; padding-left: 0em; overflow: visible">
+                <div class="comment-info row">
+                    <div class="col-md-9" style="margin-top: 1em">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+                        <img src="{{ asset('bundles/framework/images/ShopPage/product-vote.png') }}" style="width: 2em">
+
+                        <br>
+                        <span style="color: #ffffff; font-weight: bold">NAME</span>
+                        <span style="color: #ffffff">01-01-01</span>
+
+                        <div class="comment-content">
+                            <input type="text" placeholder="your comment" style="width: 40em; border-radius: 0em; margin-top: 1em; margin-bottom: 1em">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="find-me">
+                Find me on:
+                <img src="{{ asset('bundles/framework/images/facebook.png') }}">
+                <img src="{{ asset('bundles/framework/images/google-plus.png') }}">
+                <img src="{{ asset('bundles/framework/images/twitter.png') }}">
+            </div>
+        </div>
+
+
+
+</div>
+
+{% endblock %}
+
+        
+

@@ -1,0 +1,1849 @@
+{#  extend base.html.twig   #}
+{% extends ('FrontEndBundle::base.html.twig') %}
+
+{#  INCLUDE HANDED-CODE FILE    #}
+{% block header %}
+    <link rel="stylesheet" href="{{ asset('bundles/framework/css/category.page.css') }}" />
+    <script src="{{ asset('bundles/framework/js/category.js') }}"></script>
+
+{% endblock %}
+
+
+{#  TITLE   #}
+{% block title %} CATEGORY PAGE {% endblock %}
+
+{#  CONTENT   #}
+{% block content %}
+
+{#  CATEGORY  #}
+    <div class="content-field">
+{#  CATEGORY HEADER     #}
+        <div class="content-header">
+            <div class="category" style="width: auto">
+                <img src="{{ asset('bundles/framework/images/CategoryPage/fashion-field.png') }}">
+            </div>
+        </div>
+
+{#  CATEGORY CONTENT    #}
+        <div class="content-body" style="padding-bottom: 0em">
+                <div class="panel panel-default panel-category">
+                    <div class="panel-heading-category">
+                        <img src="{{ asset('bundles/framework/images/CategoryPage/cap.png') }}">
+                    </div>
+                    <div class="content-body-info row clearfix">
+                        <div class="col-md-3 product-type">
+                            <p class="product-type-name">HOT SALE</p>
+                        </div>
+                        <div class="col-md-9 product-content">
+
+                            <div class="product-content-body">
+                                <div class="owl-carousel fashion-shop-img" id="owl-demo">
+                                    {#{% for i in 0..3 %}#}
+                                    <div>
+
+                                            <div id="panel0" class="img-field-quick-view">
+
+                                                <div class="vote clearfix">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                    <div style="float: right">
+                                                        <b style="font-size: 23px">70%</b>
+                                                        <p>999.999</p>
+                                                    </div>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+                                                <div class="price-detail clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                    <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                    <div class="price-detail-price">
+                                                        100.000
+                                                    </div>
+                                                </div>
+                                                <div class="product-info clearfix">
+                                                    <div style="float: left; width: inherit">
+                                                        <div style="float: left; margin-left: 1em">
+                                                            <b>Made in:</b>
+                                                            <span>Korea</span>
+                                                        </div>
+                                                        <div style="float: right; margin-right: 1em">
+                                                            <b>Status:</b>
+                                                            <span>Available</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="color clearfix">
+                                                        <div class="color-detail row clearfix">
+                                                            <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                        </div>
+                                                        <div class="size">
+                                                            <b>Size:</b>
+                                                            <span>S M L XL</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                    <p>TOMMY T-SHIRT</p>
+                                                </div>
+                                            </div>
+                                            <div id="product0" class="img-field-category clearfix">
+                                                <div class="price">
+                                                    <span class="price-info">100,000</span>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+
+                                                <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                                <div class="click-to-cart clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                    <div style="margin-top: 1em">
+                                                        <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                        <span class="badge">10</span>
+                                                    </div>
+                                                </div>
+                                                <div class="shop-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                    <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div id="panel1" class="img-field-quick-view">
+
+                                                <div class="vote clearfix">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                    <div style="float: right">
+                                                        <b style="font-size: 23px">70%</b>
+                                                        <p>999.999</p>
+                                                    </div>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+                                                <div class="price-detail clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                    <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                    <div class="price-detail-price">
+                                                        100.000
+                                                    </div>
+                                                </div>
+                                                <div class="product-info clearfix">
+                                                    <div style="float: left; width: inherit">
+                                                        <div style="float: left; margin-left: 1em">
+                                                            <b>Made in:</b>
+                                                            <span>Korea</span>
+                                                        </div>
+                                                        <div style="float: right; margin-right: 1em">
+                                                            <b>Status:</b>
+                                                            <span>Available</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="color clearfix">
+                                                        <div class="color-detail row clearfix">
+                                                            <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                        </div>
+                                                        <div class="size">
+                                                            <b>Size:</b>
+                                                            <span>S M L XL</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                    <p>TOMMY T-SHIRT</p>
+                                                </div>
+                                            </div>
+                                            <div id="product1" class="img-field-category clearfix">
+                                                <div class="price">
+                                                    <span class="price-info">100,000</span>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+
+                                                <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                                <div class="click-to-cart clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                    <div style="margin-top: 1em">
+                                                        <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                        <span class="badge">10</span>
+                                                    </div>
+                                                </div>
+                                                <div class="shop-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                    <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <div>
+                                            <div id="panel2" class="img-field-quick-view">
+
+                                                <div class="vote clearfix">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                    <div style="float: right">
+                                                        <b style="font-size: 23px">70%</b>
+                                                        <p>999.999</p>
+                                                    </div>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+                                                <div class="price-detail clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                    <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                    <div class="price-detail-price">
+                                                        100.000
+                                                    </div>
+                                                </div>
+                                                <div class="product-info clearfix">
+                                                    <div style="float: left; width: inherit">
+                                                        <div style="float: left; margin-left: 1em">
+                                                            <b>Made in:</b>
+                                                            <span>Korea</span>
+                                                        </div>
+                                                        <div style="float: right; margin-right: 1em">
+                                                            <b>Status:</b>
+                                                            <span>Available</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="color clearfix">
+                                                        <div class="color-detail row clearfix">
+                                                            <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                        </div>
+                                                        <div class="size">
+                                                            <b>Size:</b>
+                                                            <span>S M L XL</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                    <p>TOMMY T-SHIRT</p>
+                                                </div>
+                                            </div>
+                                            <div id="product2" class="img-field-category clearfix">
+                                                <div class="price">
+                                                    <span class="price-info">100,000</span>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+
+                                                <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                                <div class="click-to-cart clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                    <div style="margin-top: 1em">
+                                                        <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                        <span class="badge">10</span>
+                                                    </div>
+                                                </div>
+                                                <div class="shop-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                    <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                                </div>
+                                            </div>
+
+                                            <div id="panel3" class="img-field-quick-view">
+
+                                                <div class="vote clearfix">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                    <div style="float: right">
+                                                        <b style="font-size: 23px">70%</b>
+                                                        <p>999.999</p>
+                                                    </div>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+                                                <div class="price-detail clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                    <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                    <div class="price-detail-price">
+                                                        100.000
+                                                    </div>
+                                                </div>
+                                                <div class="product-info clearfix">
+                                                    <div style="float: left; width: inherit">
+                                                        <div style="float: left; margin-left: 1em">
+                                                            <b>Made in:</b>
+                                                            <span>Korea</span>
+                                                        </div>
+                                                        <div style="float: right; margin-right: 1em">
+                                                            <b>Status:</b>
+                                                            <span>Available</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="color clearfix">
+                                                        <div class="color-detail row clearfix">
+                                                            <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                        </div>
+                                                        <div class="size">
+                                                            <b>Size:</b>
+                                                            <span>S M L XL</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                    <p>TOMMY T-SHIRT</p>
+                                                </div>
+                                            </div>
+                                            <div id="product3" class="img-field-category clearfix">
+                                                <div class="price">
+                                                    <span class="price-info">100,000</span>
+                                                </div>
+                                                <div class="sale-off">
+                                                    <div class="sale-off-header">
+                                                        SALE OFF
+                                                    </div>
+                                                    <div class="sale-off-info">
+                                                        50%
+                                                    </div>
+                                                </div>
+
+                                                <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                                <div class="click-to-cart clearfix">
+                                                    <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                    <div style="margin-top: 1em">
+                                                        <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                        <span class="badge">10</span>
+                                                    </div>
+                                                </div>
+                                                <div class="shop-name">
+                                                    <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                    <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <div>
+                                        <div id="panel4" class="img-field-quick-view">
+
+                                            <div class="vote clearfix">
+                                                <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                <div style="float: right">
+                                                    <b style="font-size: 23px">70%</b>
+                                                    <p>999.999</p>
+                                                </div>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+                                            <div class="price-detail clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                <div class="price-detail-price">
+                                                    100.000
+                                                </div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <div style="float: left; width: inherit">
+                                                    <div style="float: left; margin-left: 1em">
+                                                        <b>Made in:</b>
+                                                        <span>Korea</span>
+                                                    </div>
+                                                    <div style="float: right; margin-right: 1em">
+                                                        <b>Status:</b>
+                                                        <span>Available</span>
+                                                    </div>
+                                                </div>
+                                                <div class="color clearfix">
+                                                    <div class="color-detail row clearfix">
+                                                        <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                    </div>
+                                                    <div class="size">
+                                                        <b>Size:</b>
+                                                        <span>S M L XL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                <p>TOMMY T-SHIRT</p>
+                                            </div>
+                                        </div>
+                                        <div id="product4" class="img-field-category clearfix">
+                                            <div class="price">
+                                                <span class="price-info">100,000</span>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+
+                                            <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                            <div class="click-to-cart clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                <div style="margin-top: 1em">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                    <span class="badge">10</span>
+                                                </div>
+                                            </div>
+                                            <div class="shop-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="panel5" class="img-field-quick-view">
+
+                                            <div class="vote clearfix">
+                                                <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                <div style="float: right">
+                                                    <b style="font-size: 23px">70%</b>
+                                                    <p>999.999</p>
+                                                </div>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+                                            <div class="price-detail clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                <div class="price-detail-price">
+                                                    100.000
+                                                </div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <div style="float: left; width: inherit">
+                                                    <div style="float: left; margin-left: 1em">
+                                                        <b>Made in:</b>
+                                                        <span>Korea</span>
+                                                    </div>
+                                                    <div style="float: right; margin-right: 1em">
+                                                        <b>Status:</b>
+                                                        <span>Available</span>
+                                                    </div>
+                                                </div>
+                                                <div class="color clearfix">
+                                                    <div class="color-detail row clearfix">
+                                                        <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                    </div>
+                                                    <div class="size">
+                                                        <b>Size:</b>
+                                                        <span>S M L XL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                <p>TOMMY T-SHIRT</p>
+                                            </div>
+                                        </div>
+                                        <div id="product5" class="img-field-category clearfix">
+                                            <div class="price">
+                                                <span class="price-info">100,000</span>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+
+                                            <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                            <div class="click-to-cart clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                <div style="margin-top: 1em">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                    <span class="badge">10</span>
+                                                </div>
+                                            </div>
+                                            <div class="shop-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div id="panel6" class="img-field-quick-view">
+
+                                            <div class="vote clearfix">
+                                                <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                <div style="float: right">
+                                                    <b style="font-size: 23px">70%</b>
+                                                    <p>999.999</p>
+                                                </div>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+                                            <div class="price-detail clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                <div class="price-detail-price">
+                                                    100.000
+                                                </div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <div style="float: left; width: inherit">
+                                                    <div style="float: left; margin-left: 1em">
+                                                        <b>Made in:</b>
+                                                        <span>Korea</span>
+                                                    </div>
+                                                    <div style="float: right; margin-right: 1em">
+                                                        <b>Status:</b>
+                                                        <span>Available</span>
+                                                    </div>
+                                                </div>
+                                                <div class="color clearfix">
+                                                    <div class="color-detail row clearfix">
+                                                        <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                    </div>
+                                                    <div class="size">
+                                                        <b>Size:</b>
+                                                        <span>S M L XL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                <p>TOMMY T-SHIRT</p>
+                                            </div>
+                                        </div>
+                                        <div id="product6" class="img-field-category clearfix">
+                                            <div class="price">
+                                                <span class="price-info">100,000</span>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+
+                                            <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                            <div class="click-to-cart clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                <div style="margin-top: 1em">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                    <span class="badge">10</span>
+                                                </div>
+                                            </div>
+                                            <div class="shop-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="panel7" class="img-field-quick-view">
+
+                                            <div class="vote clearfix">
+                                                <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">
+                                                <div style="float: right">
+                                                    <b style="font-size: 23px">70%</b>
+                                                    <p>999.999</p>
+                                                </div>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+                                            <div class="price-detail clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">
+                                                <img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">
+                                                <div class="price-detail-price">
+                                                    100.000
+                                                </div>
+                                            </div>
+                                            <div class="product-info clearfix">
+                                                <div style="float: left; width: inherit">
+                                                    <div style="float: left; margin-left: 1em">
+                                                        <b>Made in:</b>
+                                                        <span>Korea</span>
+                                                    </div>
+                                                    <div style="float: right; margin-right: 1em">
+                                                        <b>Status:</b>
+                                                        <span>Available</span>
+                                                    </div>
+                                                </div>
+                                                <div class="color clearfix">
+                                                    <div class="color-detail row clearfix">
+                                                        <b class="color-detail-name col-md-6">Color:</b>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">
+                                                                </span>
+                                                                <span class="color-detail-color col-md-2">
+                                                                     <img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">
+                                                                </span>
+                                                    </div>
+                                                    <div class="size">
+                                                        <b>Size:</b>
+                                                        <span>S M L XL</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 0em; width: 14em">
+                                                <p>TOMMY T-SHIRT</p>
+                                            </div>
+                                        </div>
+                                        <div id="product7" class="img-field-category clearfix">
+                                            <div class="price">
+                                                <span class="price-info">100,000</span>
+                                            </div>
+                                            <div class="sale-off">
+                                                <div class="sale-off-header">
+                                                    SALE OFF
+                                                </div>
+                                                <div class="sale-off-info">
+                                                    50%
+                                                </div>
+                                            </div>
+
+                                            <a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>
+                                            <div class="click-to-cart clearfix">
+                                                <img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">
+                                                <div style="margin-top: 1em">
+                                                    <img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">
+                                                    <span class="badge">10</span>
+                                                </div>
+                                            </div>
+                                            <div class="shop-name">
+                                                <hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">
+                                                <a href="#" style="text-decoration: none; color: #808080"><span>SHOP ABC</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {#{% endfor %}#}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel-footer panel-footer-category"></div>
+
+                    {#<div class="content-body-info row clearfix">#}
+                        {#<div class="col-md-3 product-type">#}
+                            {#<p class="product-type-name">SALE OFF</p>#}
+                        {#</div>#}
+                        {#<div class="col-md-9 product-content">#}
+                            {#<div class="product-content-body">#}
+                                {#<div class="owl-carousel fashion-shop-img">#}
+
+                                    {#&#123;&#35;{% for i in 0..3 %}&#35;&#125;#}
+                                    {#<div>#}
+
+                                        {#<div id="product0" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                        {#&#123;&#35;<div id="panel0" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute; ">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+
+
+                                        {#&#123;&#35;<div id="panel1" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product1" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+
+                                    {#<div>#}
+                                        {#&#123;&#35;<div id="panel2" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product2" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+
+                                        {#&#123;&#35;<div id="panel3" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product3" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+
+                                    {#<div>#}
+                                        {#&#123;&#35;<div id="panel4" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product4" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+
+                                        {#&#123;&#35;<div id="panel5" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product5" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+                                    {#&#123;&#35;{% endfor %}&#35;&#125;#}
+                                {#</div>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="panel-footer panel-footer-category"></div>#}
+
+                    {#<div class="content-body-info row clearfix">#}
+                        {#<div class="col-md-3 product-type">#}
+                            {#<p class="product-type-name" style="margin-bottom: 17em">NEW</p>#}
+                        {#</div>#}
+                        {#<div class="col-md-9 product-content">#}
+                            {#<div class="product-content-body">#}
+                                {#<div class="owl-carousel fashion-shop-img">#}
+
+                                    {#&#123;&#35;{% for i in 0..3 %}&#35;&#125;#}
+                                    {#<div>#}
+
+                                        {#<div id="product0" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                        {#&#123;&#35;<div id="panel0" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute; ">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+
+
+                                        {#&#123;&#35;<div id="panel1" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product1" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+
+                                    {#<div>#}
+                                        {#&#123;&#35;<div id="panel2" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product2" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+
+                                        {#&#123;&#35;<div id="panel3" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product3" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+
+                                    {#<div>#}
+                                        {#&#123;&#35;<div id="panel4" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product4" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+
+                                        {#&#123;&#35;<div id="panel5" class="img-field-quick-view" style="border: 1px solid #c0c0c0; width: 20em; height: 22em; background-color: #f1f1f1; opacity: 0; position: absolute">&#35;&#125;#}
+
+                                        {#&#123;&#35;<div class="vote" style="float: left; margin-top: 1em; margin-left: 1em; width: 8em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/vote.png') }}" style="float: left; width: 4em">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right">&#35;&#125;#}
+                                        {#&#123;&#35;<b style="font-size: 23px">70%</b>&#35;&#125;#}
+                                        {#&#123;&#35;<p>999.999</p>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="sale-off" style="background-color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding-left: 1em; padding-right: 1em; font-weight: bold; color: #ffffff">&#35;&#125;#}
+                                        {#&#123;&#35;SALE OFF&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="background-color: #ce8483; padding-top: 1em; padding-bottom: 1em; font-weight: bold; color: #CC0000">&#35;&#125;#}
+                                        {#&#123;&#35;50%&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="width: inherit; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 3em; float: left; margin-top: 3em">&#35;&#125;#}
+                                        {#&#123;&#35;<img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="width: 8em; margin-left: 3em; float: left">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="price" style="float: right; background-color: #CC0000; font-weight: bold; color: #ffffff; width: 7em">&#35;&#125;#}
+                                        {#&#123;&#35;100.000&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div class="product-info" style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Made in:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Korea</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Status:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>Available</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: left; width: inherit">&#35;&#125;#}
+                                        {#&#123;&#35;<div class="row" style="float: left; margin-left: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b class="col-md-6" style="padding-right: 1em; padding-left: 0em">Color:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/red-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/black-box.png') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;<span class="col-md-2" style="padding-right: 0em; padding-left: 0em">&#35;&#125;#}
+                                        {#&#123;&#35;<img src="{{ asset('bundles/framework/images/white-box.gif') }}" style="width: 1em;">&#35;&#125;#}
+                                        {#&#123;&#35;</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="float: right; margin-right: 1em">&#35;&#125;#}
+                                        {#&#123;&#35;<b>Size:</b>&#35;&#125;#}
+                                        {#&#123;&#35;<span>S M L XL</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;<div style="padding: 1em; padding-top: 0em; margin-left: 3em; margin-right: 3em; font-size: 15px; font-weight: bold; float: left; text-align: center">&#35;&#125;#}
+                                        {#&#123;&#35;<hr style="margin-top: 0em; margin-bottom: 0em; width: 10em">&#35;&#125;#}
+                                        {#&#123;&#35;<span>TOMMY T-SHIRT</span>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#&#123;&#35;</div>&#35;&#125;#}
+                                        {#<div id="product5" class="img-field clearfix">#}
+                                            {#<div class="price">#}
+                                                {#<span class="price-info">100,000</span>#}
+                                            {#</div>#}
+                                            {#<div class="sale-off">#}
+                                                {#<div class="sale-off-header">#}
+                                                    {#SALE OFF#}
+                                                {#</div>#}
+                                                {#<div class="sale-off-info">#}
+                                                    {#50%#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#&#123;&#35;<div style="width: auto; height: auto">&#35;&#125;#}
+                                            {#<a href="#"><img class="img-rounded" src="{{ asset('bundles/framework/images/CategoryPage/product-1.png') }}" style="float: left; width: 10em; margin-left: 3em; margin-top: 3em"></a>#}
+                                            {#<div class="click-to-cart clearfix">#}
+                                                {#<img class="" src="{{ asset('bundles/framework/images/CategoryPage/cart.png') }}" style="width: 4em">#}
+                                                {#<div style="margin-top: 1em">#}
+                                                    {#<img class="product-vote" src="{{ asset('bundles/framework/images/CategoryPage/rate.png') }}" style="width: 2em; float: left; margin-left: 1em">#}
+                                                    {#<span class="badge">10</span>#}
+                                                {#</div>#}
+
+                                            {#</div>#}
+                                            {#&#123;&#35;</div>&#35;&#125;#}
+                                            {#<div class="shop-name">#}
+                                                {#<hr style="margin-top: 0em; margin-bottom: 1em; width: 10em">#}
+                                                {#<a href="#"><span>SHOP ABC</span></a>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+                                    {#&#123;&#35;{% endfor %}&#35;&#125;#}
+                                {#</div>#}
+                            {#</div>#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="panel-footer panel-footer-category"></div>#}
+
+                </div>
+        </div>
+
+    </div>
+{% endblock %}
